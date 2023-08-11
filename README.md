@@ -11,10 +11,10 @@ Full documentation [here](https://docs.google.com/document/d/1iTzE5IaBaH0Bok__Yc
 
 The goal of the project is to use machine learning to predict customer churn from a telecommunication company. That is, predicting whether a customer will change telecommunications provider. The SyriaTel dataset was used for this project. The dataset consists of 3333 records of customers and 32 columns.
 
-[!Pie-Chart](/images/pie_chart.PNG)
+[Pie-Chart](images/pie_chart.png)
 Figure 1: Pie chart showing the percentage of customers that churned vs customers that didn’t churn in the dataset.
 
-The dataset consists of 2850 records of customers that did not churn. It contains 483 records of customers that churn. The dataset is imbalanced because it has more data of customers that did not churn than customers that churned.
+The dataset consists of 2850 records of customers that did not churn. It contains 483 records of customers that churn. The dataset is imbalanced because it has more data on customers that did not churn than on customers that churned.
 
 ### Exploratory Data Analysis
 Exploratory data analysis is carried out using the Pandas-Profiling library. From the overview above, there are no missing values. The visualization above shows that none of the variables have missing values. They all have 3333 samples. The images below show the analysis of each of the columns in the dataset.
@@ -22,7 +22,7 @@ Exploratory data analysis is carried out using the Pandas-Profiling library. Fro
 The ‘phone number’ column has a cardinality of 100%. This means all the values in that column are unique. It doesn’t have any information that will help us determine if a customer will churn or not. We won’t use this variable as a feature.
 
 
-[!Correlation Matrix](/images/correlation_chart.png)
+[Correlation Matrix](images/correlation_chart.png)
 The Seaborn library is used to show the Pearson Correlation of features in the dataset. Pearson Correlation is given as:
 
 Where, 
